@@ -1,0 +1,83 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#form">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Tabla normal</h1>
+            <table>
+                <tr>
+                    <th>Alumno</th>
+                    <th>Edad</th>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Luis</td>
+                    <td>30</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h1>Tabla con grid</h1>
+            <div class="grid-table">
+                <div class="grid-row">
+                    <div class="grid-header">Curso</div>
+                    <div>BBDD</div>
+                </div>
+                <div class="grid-row">
+                    <div class="grid-header">Profesor</div>
+                    <div>Mercedes</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="form">
+            <h1>Formulario</h1>
+            <form action="/submit" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <article>
+            <div class="img-container">
+                <img src="img/cat.jpg" alt="gato">
+                <div class="image-badge">hola</div>
+            </div>
+        </article>
+
+        <div class="button-group">
+            <button class="btn">Botón 1</button>
+            <button class="btn">Botón 2</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Saludos</p>
+    </footer>
+</body>
+
+</html>
